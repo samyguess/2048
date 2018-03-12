@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Grille.qml</file>
+        <file>MaGrille.qml</file>
+    </qresource>
+</RCC>
