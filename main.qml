@@ -7,15 +7,24 @@ Window {
     height: 480
     title: qsTr("Hello World")
 
-    Connections {
-        target: parent
-        onClicked: print("clicked")
-    }
 
-    MaGrille {
-        id: maGrille
-        x: 96
-        y: 61
+    GridView {
+        id : grille2048
+        x: 5
+        y: 5
+        width: 400
+        height: 400
+
+        model: TuileModel {}
+        delegate: MaTuile2 {
+            id: tuile
+            text: value
+        }
+
+    }
+    MouseArea{
+        anchors.fill: parent
+        onClicked: grille2048.model.move(0,1,1)
     }
 
 }
