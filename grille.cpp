@@ -4,6 +4,10 @@ using namespace std;
 
 Grille::Grille()
 {
+    nouvellePartie();
+}
+
+Grille::update(){
 
 }
 
@@ -58,6 +62,6 @@ Grille::gauche(){
                 b++;
             }
         }
-
+        if(a<4 && T[i][a]~=0)P.push(T[i][a]);
     }
 }
