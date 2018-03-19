@@ -6,16 +6,4 @@ Window {
     width: 640
     height: 480
     title: qsTr("Hello World")
-
-    Connections {
-        target: parent
-        onClicked: print("clicked")
-    }
-
-    MaGrille {
-        id: maGrille
-        x: 96
-        y: 61
-    }
-
 }
